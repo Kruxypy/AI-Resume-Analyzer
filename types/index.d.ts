@@ -10,7 +10,10 @@ interface Resume {
     companyName?: string;
     jobTitle?: string;
     imagePath: string;
-    resumePath: string;
+    resumePath?: string;
+    fileName?: string;
+    uploadedAt?: string;
+    jobDescription?: string;
     feedback: Feedback;
 }
 

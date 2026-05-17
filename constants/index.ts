@@ -4,29 +4,76 @@ export const resumes: Resume[] = [
         id: "1",
         companyName: "Google",
         jobTitle: "Frontend Developer",
-        imagePath: "/images/resume-1.png",
-        resumePath: "/resumes/resume-1.pdf",
+        imagePath: "/images/resume_01.png",
         feedback: {
             overallScore: 85,
             ATS: {
                 score: 90,
-                tips: [],
+                tips: [
+                    { type: "good", tip: "Clear job titles and dates" },
+                    { type: "improve", tip: "Add more role keywords from the JD" },
+                    { type: "improve", tip: "Use standard section headings (Experience, Skills, Education)" },
+                ],
             },
             toneAndStyle: {
                 score: 90,
-                tips: [],
+                tips: [
+                    {
+                        type: "good",
+                        tip: "Confident, direct language",
+                        explanation: "Action verbs and concise bullets make the impact easy to scan.",
+                    },
+                    {
+                        type: "improve",
+                        tip: "Reduce long bullets",
+                        explanation: "Split multi-part bullets into 1 idea per line for faster readability.",
+                    },
+                ],
             },
             content: {
                 score: 90,
-                tips: [],
+                tips: [
+                    {
+                        type: "good",
+                        tip: "Quantified outcomes",
+                        explanation: "Numbers (performance, users, revenue, time saved) strengthen credibility.",
+                    },
+                    {
+                        type: "improve",
+                        tip: "Add more project depth",
+                        explanation: "Include tech stack + your specific ownership for key projects.",
+                    },
+                ],
             },
             structure: {
                 score: 90,
-                tips: [],
+                tips: [
+                    {
+                        type: "good",
+                        tip: "Easy-to-skim layout",
+                        explanation: "Good spacing and consistent formatting help reviewers scan quickly.",
+                    },
+                    {
+                        type: "improve",
+                        tip: "Tighten top section",
+                        explanation: "Keep summary to 2–3 lines and move details into Experience.",
+                    },
+                ],
             },
             skills: {
                 score: 90,
-                tips: [],
+                tips: [
+                    {
+                        type: "good",
+                        tip: "Relevant frontend stack",
+                        explanation: "Showcases the core technologies needed for modern web roles.",
+                    },
+                    {
+                        type: "improve",
+                        tip: "Group skills by category",
+                        explanation: "Separate Languages, Frameworks, Tools, and Cloud for clarity.",
+                    },
+                ],
             },
         },
     },
@@ -34,29 +81,76 @@ export const resumes: Resume[] = [
         id: "2",
         companyName: "Microsoft",
         jobTitle: "Cloud Engineer",
-        imagePath: "/images/resume-2.png",
-        resumePath: "/resumes/resume-2.pdf",
+        imagePath: "/images/resume_02.png",
         feedback: {
             overallScore: 55,
             ATS: {
-                score: 90,
-                tips: [],
+                score: 60,
+                tips: [
+                    { type: "improve", tip: "Match more cloud keywords to the role" },
+                    { type: "improve", tip: "Add missing certifications if applicable" },
+                    { type: "good", tip: "Includes core cloud responsibilities" },
+                ],
             },
             toneAndStyle: {
-                score: 90,
-                tips: [],
+                score: 55,
+                tips: [
+                    {
+                        type: "improve",
+                        tip: "Use stronger action verbs",
+                        explanation: "Replace passive phrases with delivered/built/migrated/automated.",
+                    },
+                    {
+                        type: "improve",
+                        tip: "Reduce jargon",
+                        explanation: "Be specific about what you built and the impact instead of buzzwords.",
+                    },
+                ],
             },
             content: {
-                score: 90,
-                tips: [],
+                score: 55,
+                tips: [
+                    {
+                        type: "improve",
+                        tip: "Add measurable impact",
+                        explanation: "Include latency/cost reductions, uptime improvements, scale, or SLOs.",
+                    },
+                    {
+                        type: "improve",
+                        tip: "Highlight ownership",
+                        explanation: "Call out your role in incident response, design, and delivery.",
+                    },
+                ],
             },
             structure: {
-                score: 90,
-                tips: [],
+                score: 60,
+                tips: [
+                    {
+                        type: "good",
+                        tip: "Sections are present",
+                        explanation: "Experience and skills are clearly separated.",
+                    },
+                    {
+                        type: "improve",
+                        tip: "Improve consistency",
+                        explanation: "Keep bullet indentation, punctuation, and tense consistent.",
+                    },
+                ],
             },
             skills: {
-                score: 90,
-                tips: [],
+                score: 45,
+                tips: [
+                    {
+                        type: "improve",
+                        tip: "Add missing tools",
+                        explanation: "Include IaC, monitoring, and CI/CD tools commonly required.",
+                    },
+                    {
+                        type: "improve",
+                        tip: "Prioritize key skills first",
+                        explanation: "Put the most relevant 8–12 skills at the top for quick scanning.",
+                    },
+                ],
             },
         },
     },
@@ -64,29 +158,76 @@ export const resumes: Resume[] = [
         id: "3",
         companyName: "Apple",
         jobTitle: "iOS Developer",
-        imagePath: "/images/resume-3.png",
-        resumePath: "/resumes/resume-3.pdf",
+        imagePath: "/images/resume_03.png",
         feedback: {
             overallScore: 75,
             ATS: {
-                score: 90,
-                tips: [],
+                score: 70,
+                tips: [
+                    { type: "good", tip: "Strong iOS keywords present" },
+                    { type: "improve", tip: "Add more app-store impact metrics" },
+                    { type: "improve", tip: "Include accessibility and testing keywords" },
+                ],
             },
             toneAndStyle: {
-                score: 90,
-                tips: [],
+                score: 75,
+                tips: [
+                    {
+                        type: "good",
+                        tip: "Concise bullet points",
+                        explanation: "Keeps each line focused, making scanning easier.",
+                    },
+                    {
+                        type: "improve",
+                        tip: "Clarify technical depth",
+                        explanation: "Briefly mention architecture choices and tradeoffs (MVVM, DI, etc.).",
+                    },
+                ],
             },
             content: {
-                score: 90,
-                tips: [],
+                score: 80,
+                tips: [
+                    {
+                        type: "good",
+                        tip: "Project portfolio is visible",
+                        explanation: "Shows the types of apps and features you’ve built.",
+                    },
+                    {
+                        type: "improve",
+                        tip: "Add more business impact",
+                        explanation: "Tie work to user engagement, retention, crash-free rate, or revenue.",
+                    },
+                ],
             },
             structure: {
-                score: 90,
-                tips: [],
+                score: 75,
+                tips: [
+                    {
+                        type: "good",
+                        tip: "Readable layout",
+                        explanation: "Spacing and hierarchy make the resume easy to review.",
+                    },
+                    {
+                        type: "improve",
+                        tip: "Tighten spacing",
+                        explanation: "Use consistent margins and avoid large blank sections.",
+                    },
+                ],
             },
             skills: {
-                score: 90,
-                tips: [],
+                score: 75,
+                tips: [
+                    {
+                        type: "good",
+                        tip: "Modern iOS stack",
+                        explanation: "Swift and common iOS frameworks are clearly present.",
+                    },
+                    {
+                        type: "improve",
+                        tip: "List testing + tooling",
+                        explanation: "Add XCTest, CI, and debugging/perf tools to round out the stack.",
+                    },
+                ],
             },
         },
     },
